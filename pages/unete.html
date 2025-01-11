@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/unete.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/4bc23db062.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/img/logoSISE_v4.png" type="image/x-icon">
+    <title>¡Únete a SISE!</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init({
+            publicKey: "Qd9lLPOuNzj4tn0y8", // Reemplaza con tu llave pública
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="../pages/nosotros.html">NOSOTROS</a>
+            <a href="../pages/proyectos.html">PROYECTOS</a>
+            <a href="../pages/galeria.html">GALERÍA</a>
+        </div>
+        <div class="logo">
+            <a href="../../SISE/index.html"><img src="../assets/img/logoSISE_v4.png" alt="Logo"></a>
+        </div>
+        <div class="nav-right">
+            <a href="../pages/educacion.html">EDUCACIÓN</a>
+            <a href="../pages/organizacion.html">ORGANIZACIÓN</a>
+            <a href="../pages/unete.html">¡ÚNETE!</a>
+        </div>
+        <i class="fa-solid fa-bars menu-icon"></i>
+        <div class="mobile-menu">
+            <a href="../pages/nosotros.html">NOSOTROS</a>
+            <a href="../pages/proyectos.html">PROYECTOS</a>
+            <a href="../pages/galeria.html">GALERÍA</a>
+            <a href="../pages/educacion.html">EDUCACIÓN</a>
+            <a href="../pages/organizacion.html">ORGANIZACIÓN</a>
+            <a href="../pages/unete.html">¡ÚNETE!</a>
+        </div>
+    </header>
+
+    <section class="join-section">
+        <h1>¡Únete al Semillero de Sistemas Embebidos!</h1>
+        <img src="../assets/img/logoSISE_v4.png" alt="Logo SISE" class="logo-unete">
+        <p class="intro">
+            Si te apasiona la tecnología, la programación y la electrónica, este es el lugar perfecto para desarrollar tus habilidades y trabajar en proyectos innovadores. Al formar parte del semillero, podrás aprender, colaborar con otros estudiantes y participar en eventos y competencias.
+        </p>
+        <p class="form-instruction">¡Llena el formulario y forma parte de nuestra comunidad!</p>
+
+        <div class="form-container">
+            <form id="join-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Escribe tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Escribe tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Programa Académico:</label>
+                    <input type="text" id="program" name="user_program" placeholder="Escribe tu programa académico" required>
+                </div>
+                <div class="form-group">
+                    <label for="semester">Semestre según SIMCA:</label>
+                    <select id="semester" name="user_semester" required>
+                        <option value="">Selecciona tu semestre</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reason">¿Por qué quieres unirte al semillero?</label>
+                    <textarea id="reason" name="user_reason" placeholder="Escribe el motivo de tu solicitud..." rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>¿Cómo te enteraste del semillero?</label>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="user_source" value="Redes Sociales" required> Redes Sociales</label>
+                        <label><input type="radio" name="user_source" value="Amigos o Compañeros"> Amigos o Compañeros</label>
+                        <label><input type="radio" name="user_source" value="Profesores"> Profesores</label>
+                        <label><input type="radio" name="user_source" value="Otros"> Otros</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">
+                    <i class='bx bx-mail-send'></i> Enviar Solicitud
+                </button>
+            </form>
+            
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2 id="modal-title">Mensaje enviado</h2>
+                <p id="modal-message">¡Tu solicitud ha sido enviada con éxito!</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="../assets/js/unete.js"></script>
+    <script src="../assets/js/menu-responsive.js"></script>
+</body>
+<footer class="footer">
+    <!-- Primera columna -->
+    <div class="footer-logo">
+        <a href="https://www.unicauca.edu.co/"><img src="../assets/img/Unicauca Blanco.png" alt="Universidad del Cauca"></a>
+    </div>
+
+    <!-- Segunda columna -->
+    <div class="footer-section">
+        <h3>SEMILLERO DE INVESTIGACIÓN DE SISTEMAS EMBEBIDOS</h3>
+        <ul>
+            <li><a href="../pages/nosotros.html">Misión</a></li>
+            <li><a href="../pages/nosotros.html">Visión</a></li>
+            <li><a href="../pages/proyectos.html">Proyectos</a></li>
+            <li><a href="../pages/educacion.html">Educación</a></li>
+        </ul>
+    </div>
+
+    <!-- Tercera columna -->
+    <div class="footer-section">
+        <h3>EVENTOS</h3>
+        <ul>
+            <li><a href="#">Seminario 2025</a></li>
+        </ul>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/sise_uc/?igsh=MTFoN2t6eWR6Nm1xOA%3D%3D#" class="social-link"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-facebook-square'></i></a>
+            <a href="mailto:semillerosise@unicauca.edu.co" class="social-link"><i class='bx bxl-gmail'></i></a>
+        </div>
+    </div>
+
+    <!-- Cuarta columna -->
+    <div class="footer-section">
+        <h3>ORGANIZACIÓN</h3>
+        <ul>
+            <li><a href="">Junta Directiva</a></li>
+            <li><a href="">Equipo</a></li>
+        </ul>
+
+        <div class="footer-button">
+            <a href="../pages/unete.html" class="join-button">¿Quieres unirte?  <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <p class="footer-copyright">© Copyright 2025 SISE - All Rights Reserved</p>
+</div>
+</html>

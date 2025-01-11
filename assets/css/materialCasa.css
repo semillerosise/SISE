@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Licorice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* -------------------------- SECTION 1: Sección de la imagen --------------------------*/
+/* Fondo principal con imagen y capa gris */
+.background-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('../../assets/img/IMG_6057.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.background-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa gris */
+    z-index: 1;
+}
+
+/* Contenedor principal */
+.content-container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Título principal */
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Contenido del formulario */
+/* Contenido del formulario */
+.form-content {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 90%; /* Asegura que el formulario no se desborde */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    overflow: hidden; /* Evita desbordamientos internos */
+    padding: 30px 90px;
+}
+
+
+.form-content h2 {
+    font-size: 1.5rem;
+    color: #FFAF00;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Permite romper palabras largas */
+    overflow-wrap: break-word;
+}
+
+.form-content p {
+    font-size: 1rem;
+    margin: 25px 0;
+    word-wrap: break-word; /* Maneja palabras largas */
+}
+
+/* Formulario */
+.access-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-code {
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding esté dentro del ancho */
+    overflow: hidden; /* Evita texto adicional visible */
+}
+
+.btn-access {
+    background-color: #004661;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-access:hover {
+    background-color: #002d40;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    font-style: italic;
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+}
+
+.error-message.active {
+    display: block; /* Muestra el mensaje cuando hay error */
+    opacity: 1; /* Totalmente visible */
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-content {
+        padding: 15px;
+        max-width: 90%; /* Más pequeño en dispositivos pequeños */
+    }
+
+    .form-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-content p {
+        font-size: 0.8rem;
+    }
+
+    .input-code {
+        font-size: 0.8rem;
+    }
+
+    .btn-access {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,258 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Licorice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General */
+.dashboard {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+}
+
+/* ------------------------------ Main Content ------------------------------ */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #D9D9D9;
+  padding: 30px;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+  /* Necesario para el posicionamiento de los botones */
+  max-width: 100%;
+  /* Asegura que el contenido no se desborde */
+}
+
+/* ------------------------------ Slider ------------------------------ */
+.slider-components {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card-components {
+  display: flex;
+  flex-direction: column;
+  /* Distribuye los elementos verticalmente */
+  justify-content: space-evenly;
+  gap: 5px;
+  /* Espacia los elementos uniformemente */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  width: 100%;
+  max-width: 300px;
+  /* Limita el tamaño máximo de cada card */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 300px;
+  /* Alto fijo de la card */
+  flex-shrink: 0;
+  /* Evita que las cards se encojan */
+  padding: 15px;
+  /* Espaciado interno */
+}
+
+.card-components:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-image-components {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-title-components {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  /* Elimina el margen */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-description-components {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: justify;
+  /* Alinea el texto para una mejor legibilidad */
+  margin: 0;
+  /* Elimina el margen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-more-btn-components {
+  font-family: 'Lato', sans-serif;
+  background-color: #FFAF00;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  /* Elimina el margen */
+  align-self: center;
+  /* Centra el botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-more-btn-components:hover {
+  background-color: #155a8a;
+}
+
+/* ======================== Modal ======================== */
+.modal-components {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-open {
+  display: flex; /* Muestra el modal cuando se agrega esta clase */
+}
+
+.modal-content-components {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-image-components {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.close-modal-components {
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+
+/* ------------------------------ Slider Buttons ------------------------------ */
+.slider-buttons-components {
+  display: flex;
+  flex-direction: column;
+  /* Alinea los botones verticalmente */
+  justify-content: center;
+  /* Centra los botones verticalmente */
+  position: absolute;
+  top: 50%;
+  /* Posiciona los botones en el centro vertical */
+  transform: translateY(-50%);
+  /* Ajusta para centrar perfectamente */
+  right: 10px;
+  /* Mueve los botones a la derecha */
+  z-index: 10;
+  /* Asegura que los botones estén por encima del contenido */
+}
+
+.slider-button-components {
+  background: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro con algo de transparencia */
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  /* Tamaño adecuado para los iconos */
+  padding: 10px;
+  margin: 10px 0;
+  /* Espaciado entre los botones */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-button-components:hover {
+  background: rgba(0, 0, 0, 0.8);
+  /* Oscurece el fondo al pasar el cursor */
+}
+
+.slider-button-components i {
+  margin: 0;
+  /* Elimina cualquier margen alrededor del icono */
+  font-size: 1.5rem;
+  /* Asegura un tamaño adecuado del icono */
+}
+
+/* ------------------------------ Responsive ------------------------------ */
+@media (max-width: 768px) {
+  .main-content {
+    overflow: hidden;
+  }
+
+  .slider-components {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card-components {
+    height: auto;
+    /* Ajusta la altura automáticamente en pantallas pequeñas */
+  }
+
+  .slider-button-components::after {
+    content: 'Nuevo Texto'; /* Cambia 'Nuevo Texto' por el texto que quieras */
+    position: absolute;
+    top: 100%; /* Posiciónalo justo debajo del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo para el texto */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 0.8rem; /* Tamaño de fuente */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    opacity: 0; /* Oculta inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave para mostrar */
+    pointer-events: none; /* Evita interferencia con clics */
+  }
+  
+  .slider-button-components:hover::after {
+    opacity: 1; /* Muestra el texto al pasar el ratón */
+  }
+  
+}

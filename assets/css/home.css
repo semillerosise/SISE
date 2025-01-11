@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------- SECTION 2: Proyectos -------------------------------*/
+.cards-information {
+    overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 130vh;
+}
+
+.cards-information h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.cards-information .cards-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ------------------------------------------------ Cards: Explora, Aprende y Juega ------------------------------------------------*/
+/* Contenedor de las cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    /* Espaciado uniforme entre las cards */
+    align-items: flex-start;
+    /* Alinea las cards en la parte superior */
+    flex-wrap: wrap;
+    /* Permite que las cards se ajusten en pantallas pequeñas */
+    gap: 70px;
+    /* Espaciado entre las cards */
+    padding: 20px;
+    /* Margen interno del contenedor */
+}
+
+/* Estilo general de cada card */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle efecto de elevación */
+    width: 300px;
+    /* Ancho fijo para cada card */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Centra el texto */
+    position: relative;
+    /* Asegura el posicionamiento correcto */
+}
+
+/* Imagen de la card */
+.card-image img {
+    width: 25vw;
+    /* La imagen ocupa todo el ancho de la card */
+    height: 250px;
+    /* Altura fija */
+    object-fit: cover;
+    /* Ajusta la imagen dentro del espacio */
+    border-top-left-radius: 15px;
+    /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 15px;
+    z-index: 1;
+    /* Asegura que la imagen esté detrás del contenido */
+}
+
+/* Contenido de la card */
+.card-content {
+    padding: 20px;
+    /* Espaciado interno del contenido */
+    background-color: #fff;
+    /* Fondo blanco para el texto */
+    z-index: 2;
+    /* Asegura que el contenido esté encima de la imagen */
+    position: relative;
+    /* Relativo para superposición adecuada */
+}
+
+/* Título de la card */
+.card-content h3 {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+}
+
+/* Texto de la card */
+.card-content p {
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    line-height: 1.5;
+    /* Espaciado entre líneas */
+}
+
+/* -------------------------------- SECTION: Talleres y Conferencias -------------------------------- */
+.talleresCards {
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #99B5C0;
+}
+
+.container-talleres {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.card-talleres {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.card-talleres img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.card-talleres .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-talleres .content h2 {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-talleres .content p {
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ------------------------------- SECTION: Galeria de momentos -------------------------------*/
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+}
+
+.gallery {
+    display: grid;
+    gap: 0; /* Eliminar espacio entre imágenes */
+    width: 100vw; /* Usar todo el ancho de la ventana */
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas */
+    grid-template-rows: 1fr 1fr; /* 2 filas */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 60%; /* Mantener la relación de aspecto de las imágenes */
+}
+
+/* Las imágenes deben cubrir todo el área del contenedor */
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubrir sin deformar */
+    object-position: center; /* Centrar la imagen */
+}
+
+/* Primer bloque: las primeras 3 imágenes ocupan 2 columnas cada una */
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(3) {
+    grid-column: span 2; /* Ocupa dos columnas */
+}
+
+/* Cuarta imagen: ocupa solo 1 columna */
+.gallery-item:nth-child(4) {
+    grid-column: span 1; /* Ocupa una columna */
+}
+
+/* Segunda fila: la primera imagen ocupa 1.5 columnas */
+.gallery-item:nth-child(5) {
+    grid-column: span 1.5; /* 1.5 columnas ocupadas */
+}
+
+/* Imagen 6 ocupa 1 columna */
+.gallery-item:nth-child(6) {
+    grid-column: span 2;
+}
+
+/* Imagen 7 ocupa 2 columnas */
+.gallery-item:nth-child(7) {
+    grid-column: span 2; /* 2 columnas ocupadas */
+}
+
+/* Imagen 8 ocupa 1 columna */
+.gallery-item:nth-child(8) {
+    grid-column: span 2; /* 1 columna ocupada */
+}
+
+/* Limitar a solo dos filas (8 imágenes) */
+.gallery-item:nth-child(n+9) {
+    display: none; /* Solo se muestran las primeras 8 imágenes */
+}
+
+
+
+
+/* -------------------------------- MEDIA QUERIES -------------------------------- */
+@media (max-width: 768px) {
+
+    /* ------------------------------- SECTION 3 -------------------------------*/
+    .cards-information h1 {
+        padding: 0 25px;
+        font-size: 2rem;
+    }
+
+    .cards-information {
+        padding: 50px 0;
+        height: auto;
+        text-align: center;
+    }
+
+    /* Cards */
+    .cards-container {
+        flex-direction: column;
+        /* Cambia las cards a disposición vertical */
+        align-items: center;
+        gap: 30px;
+        /* Espaciado entre las cards */
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card-image img {
+        width: 80vw;
+        /* Imagen ocupa el ancho completo */
+        height: 200px;
+        /* Ajusta la altura para móviles */
+    }
+
+    .card-content h3 {
+        font-size: 1rem;
+        /* Texto más pequeño */
+    }
+
+    .card-content p {
+        font-size: 0.8em;
+        /* Texto más pequeño */
+    }
+
+
+    /* ------------------------------- SECTION: Talleres y Conferencias -------------------------------*/
+    .talleresCards h1 {
+        text-align: center;
+    }
+
+    .container-talleres {
+        width: 75%;
+    }
+
+    .card-talleres {
+        flex-direction: column;
+    }
+
+    .card-talleres img {
+        width: 100%;
+    }
+
+    .card-talleres .content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-talleres .content h2 {
+        font-size: 1rem;
+    }
+
+    .card-talleres .content p {
+        font-size: 0.8em;
+    }
+
+    /* ------------------------------- SECTION: Galeria de momentos -------------------------------*/
+    .galeria{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+
+    .gallery {
+        padding: 0 30px;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+        grid-template-rows: auto; /* Las filas se ajustan automáticamente */
+    }
+
+    /* Las imágenes ahora ocuparán solo 1 columna en móviles */
+    .gallery-item {
+        grid-column: span 1; /* Cada imagen ocupa 1 columna */
+        padding-top: 100%; /* Ajustar el padding para que las imágenes se ajusten mejor */
+    }
+
+    /* Se pueden ajustar los tamaños de las imágenes de la siguiente manera */
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(5),
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(7),
+    .gallery-item:nth-child(8) {
+        padding-top: 80%; /* Reducir el padding-top en móvil para que las imágenes sean más cuadradas */
+    }
+}

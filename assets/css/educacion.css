@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    max-width: 900px;
+    /* Reduce el ancho máximo de la card */
+    width: 100%;
+    height: 300px;
+    /* Ajusta el alto de las cards */
+}
+
+.card-content {
+    font-family: 'Poppins';
+    padding: 20px;
+    width: 50%;
+}
+
+.card img {
+    width: 50%;
+    /* La imagen ocupa la mitad de la card */
+    height: 100%;
+    /* Ocupa todo el alto de la card */
+    object-fit: cover;
+    /* La imagen se recorta adecuadamente */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------- KITS EDUCATIVOS --------------------------------- */
+.section-kits {
+    overflow: hidden;
+    background-color: #FFAF00; /* Fondo general */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-kits h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-kits {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    margin-inline: 1.5rem;
+    padding-block: 2rem;
+}
+
+.card__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Se ajusta automáticamente en múltiples columnas */
+    gap: 2rem;
+    justify-items: stretch; /* Asegura que las columnas ocupen el ancho completo */
+    width: 80%; /* Asegura que el contenedor ocupe el espacio completo */
+    max-width: 1200px; /* Limita el ancho máximo para un diseño centrado */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+
+.card__article {
+    position: relative;
+    width: 100%; /* La card ocupa todo el ancho de su columna */
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Alinea la imagen y el contenido en columna */
+    justify-content: stretch;
+}
+
+.card__article:hover {
+    transform: translateY(-10px); /* Efecto flotante */
+}
+
+.card__img {
+    width: 100%; /* Imagen ocupa todo el ancho disponible */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1.5rem; /* Bordes redondeados solo en la parte superior */
+}
+
+.card__data {
+    flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem; /* Bordes redondeados solo en la parte inferior */
+    z-index: 20000;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Permite alinear el contenido verticalmente */
+    justify-content: space-evenly;
+    position: relative; /* Necesario para aplicar left */
+    left: 15px; /* Desplazamiento horizontal fijo */
+    top: -10%;
+    max-width: calc(100% - 100px); /* Evita desbordamientos horizontales */
+}
+
+.card__data h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card__data p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.card__data a{
+    text-decoration: none;
+}
+
+.card__data button{
+    background-color: #FFAF00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.card__data button:hover{
+    background-color: #004661;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .card__container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+        gap: 4rem; /* Espacio reducido entre las cards */
+    }
+
+    .card__data {
+        left: 0; /* Elimina el desplazamiento horizontal */
+        top: 0; /* Alinea el contenido directamente sobre la imagen */
+        max-width: 100%; /* Asegura que ocupe el ancho completo */
+        padding: 1rem 1.5rem; /* Reduce el padding para ajustarlo a pantallas más pequeñas */
+        border-radius: 0;
+    }
+
+    .card__img {
+        border-radius: 0;
+        height: 200px; /* Reduce la altura de la imagen en pantallas más pequeñas */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card__container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas grandes */
+        gap: 2rem; /* Espaciado adecuado */
+        width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+        max-width: 100%; /* Evita desbordamientos */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+
+    .card__article {
+        width: 100%; /* Ocupa todo el ancho de la columna */
+    }
+
+    .card__data {
+        left: 0; /* Elimina cualquier desplazamiento horizontal */
+        top: 0; /* Alinea el contenido sobre la imagen */
+        max-width: 100%; /* Asegura que no haya desbordamientos */
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .card__container {
+        grid-template-columns: 1fr; /* Una columna en celulares */
+    }
+
+    .card__data {
+        padding: 0.8rem 1rem; /* Reduce aún más el padding */
+    }
+
+    .card__img {
+        height: 180px; /* Altura menor para celulares */
+    }
+
+    .card__article {
+        border-radius: 0.7rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        max-width: 80%;
+        /* Ajuste responsivo */
+        height: auto;
+        padding: 20px 20px;
+    }
+
+    .card img {
+        width: 100%;
+        /* La imagen ocupará todo el ancho en pantallas pequeñas */
+        height: 200px;
+        /* Fijar un alto adecuado */
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    /* ---------------------------------------- KITS EDUCATIVOS --------------------------------- */
+
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.organization {
+    padding: 20px;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.organization h1 {
+    font-family: Lato;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+.section {
+    margin-bottom: 40px;
+}
+
+.organization .comites{
+    text-align: left;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #FFAF00;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1rem;
+    color: #004661;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.organization .row-3{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.organization .row-3 h2{
+    text-align: center;
+}
+
+/* ------------------------------- MODAL ------------------------------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    overflow-y: auto; /* Para manejar contenido extenso */
+    max-height: 80vh;
+}
+
+.modal-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .organization {
+        padding: 50px 20px; /* Reduce el padding en dispositivos más pequeños */
+    }
+
+    .organization h1 {
+        font-size: 32px; /* Reduce el tamaño del título principal */
+    }
+
+    .organization .comites{
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce el tamaño de los títulos de las secciones */
+    }
+
+    .card-container {
+        flex-direction: column; /* Cambia la disposición de las cards a columna */
+        gap: 30px; /* Ajusta el espacio entre las cards */
+    }
+
+    .card {
+        width: 80%; /* Asegura que las cards ocupen el ancho completo */
+        max-width: 300px; /* Limita el ancho máximo */
+        margin: 0 auto; /* Centra las cards */
+    }
+
+    .card img {
+        width: 150px; /* Reduce el tamaño de las imágenes */
+        height: 150px;
+    }
+
+    .organization .row-3{
+        flex-direction: column;
+    }
+}
+
