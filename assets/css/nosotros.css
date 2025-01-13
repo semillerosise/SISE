@@ -72,6 +72,56 @@ ol li b {
     color: #004661; /* Azul para los textos destacados */
 }
 
+.logosDepartamento{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logosDepartamento a{
+    text-decoration: none;
+    color: black;
+}
+
+.logos-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosDepartamento p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logosDepartamento p:hover{
+    text-decoration: underline;
+}
+
+.logos-card .logo-unicauca{
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+}
+
+.logos-card .letra-unicauca{
+    margin-top: 15px;
+}
+
+.logosDepartamento img{
+    width: 220px;
+    max-width: 100%;
+    height: 200px;
+    max-height: 100%;
+    object-fit: cover;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .divisionPilares {
@@ -92,5 +142,12 @@ ol li b {
         padding-top: 20px;
         border-left:none;
         padding-left: 0;
+    }
+
+    .logosDepartamento{
+        margin-top: 30px;
+        padding: 30px 0;
+        justify-content: center;
+        gap: 50px;
     }
 }
