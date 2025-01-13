@@ -183,6 +183,8 @@
 @media (max-width: 428px) {
     .checkbox-group {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
