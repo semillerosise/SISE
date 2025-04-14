@@ -64,6 +64,26 @@
     padding-bottom: 30px;
 }
 
+.description-container{
+    display: flex;
+    justify-content: space-between;  /* Alinea los elementos en una fila con espacio entre ellos */
+    align-items: center;  /* Alinea los elementos al principio */
+    gap: 20px;  /* Espacio entre la descripción y la imagen */
+}
+
+.content-carlitos {
+    flex: 1;  /* Hace que el contenido ocupe el espacio disponible */
+    text-align: left;
+}
+
+/* Estilo de la imagen */
+.carlitos_img img {
+    width: 90%;
+    max-width: 500px;  /* Establece un límite máximo para la imagen */
+    height: auto;  /* Mantiene las proporciones de la imagen */
+    border-radius: 10px;
+}
+
 /* -------------------------- SECTION 2: Sección de contenido --------------------------*/
 .content-section .content {
     font-family: 'Lato', sans-serif;
@@ -93,6 +113,20 @@
 .content-section .content ul li {
     margin-bottom: 10px;
     font-size: 1rem;
+
+    display: flex;
+    align-items: center;  /* Centra verticalmente el texto con respecto al título */
+}
+
+.content-section .content ul li b{
+    flex: 1;  /* Deja que el título ocupe el espacio disponible a la izquierda */
+    margin-right: 10px;  /* Espacio entre el título y la descripción */
+    font-weight: bold;  /* Asegura que el título sea en negrita */
+}
+
+.content-section .content ul li p{
+    flex: 2;  /* Deja que la descripción ocupe más espacio que el título */
+    margin: 0;  /* Elimina márgenes adicionales de la descripción */
 }
 
 
