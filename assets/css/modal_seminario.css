@@ -1,0 +1,102 @@
+/* Estilo básico del modal */
+.modal-seminario {
+    display: none; /* Ocultarlo por defecto */
+    position: fixed;
+    z-index: 9999; /* Asegurarse de que el modal esté encima de todo el contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none; /* Hacer que el contenido pueda desplazarse si es necesario */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+}
+
+/* Animación de entrada */
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }
+
+  /* Aplicación de la animación al modal */
+.modal-seminario[transition-style="in:circle:hesitate"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  }
+
+/* Contenido del modal */
+.modal-seminario-content {
+    background-color: #fff;
+    margin: 3% auto; /* Alineamos el modal más arriba */
+    padding: 10px 0;
+    border: 1px solid #888;
+    width: 40%;
+    max-width: 600px; /* Máximo tamaño del modal */
+    position: relative; /* Para que el ícono de cierre se posicione relativo a este contenedor */
+    border-radius: 5px;
+}
+
+/* Estilo del botón de cerrar (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #faab04; /* Fondo de la X */
+    color: white; /* Color de la X */
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px; /* Espaciado alrededor de la X */
+    border-radius: 5px; /* Bordes redondeados, pero no circular */
+    cursor: pointer;
+    width: 40px; /* Ancho específico para el cuadro */
+    height: 40px; /* Alto específico para el cuadro */
+    text-align: center; /* Centrado del ícono dentro del cuadro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del ícono de la X cuando se pasa el cursor */
+.close:hover,
+.close:focus {
+    color: #fff; /* Asegurar que la X siga siendo blanca al hacer hover */
+    background-color: #e09500; /* Color de fondo al pasar el cursor */
+    text-decoration: none;
+}
+
+/* Estilo de la imagen */
+.modal-seminario-content img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    max-height: 80vh; /* Limita la altura máxima para que no se salga de la pantalla */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+/* Media Query para pantallas con ancho máximo de 768px */
+@media (max-width: 768px) {
+    .modal-seminario-content {
+        width: 90%; /* Reducir el ancho del modal */
+        max-width: 500px; /* Máximo ancho del modal */
+        margin: 5% auto; /* Alineamos el modal más cerca de la parte superior */
+        padding: 15px; /* Reducir el padding */
+    }
+
+    /* Ajustes en el ícono de cierre */
+    .close {
+        top: 8px;
+        right: 8px;
+        font-size: 24px; /* Reducir tamaño de la X */
+        width: 35px; /* Reducir tamaño del cuadro */
+        height: 35px; /* Reducir tamaño del cuadro */
+    }
+
+    /* Ajustes en la imagen */
+    .modal-seminario-content img {
+        max-height: 70vh; /* Limitar la altura de la imagen en pantallas pequeñas */
+    }
+}

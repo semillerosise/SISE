@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css//modal_seminario.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/4bc23db062.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/logoSISE_v4.png" type="image/x-icon">
@@ -15,6 +16,16 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div id="modal-seminario" class="modal-seminario">
+        <div class="modal-seminario-content">
+            <!-- Icono de cerrar (X) -->
+            <span class="close" id="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Imagen en lugar de texto -->
+            <img src="./assets/img/poster-sense2025.jpg" alt="Poster del Evento" style="width: 100%; border-radius: 8px;">
+        </div>
+    </div>
+
     <header>
         <div class="nav-left">
             <a href="./pages/nosotros.html">NOSOTROS</a>
@@ -172,6 +183,7 @@
         </div>
     </div>
 
+    <script src="./assets/js/script-seminario.js"></script>
     <script src="./assets/js/menu-responsive.js"></script>
     <script src="./assets/js/slider.js"></script>
 </body>
