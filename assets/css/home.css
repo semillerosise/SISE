@@ -163,6 +163,10 @@
     margin-bottom: 10px;
 }
 
+.card-talleres .content a, .card-talleres .content a:visited {
+    text-decoration: none;
+}
+
 .card-talleres .content p {
     font-size: 0.9em;
     font-family: 'Roboto', sans-serif;
