@@ -16,7 +16,9 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    height: 130vh;
+    height: 100%;
+    max-height: auto;
+    padding: 30px 0;
 }
 
 .cards-information h1 {
@@ -29,7 +31,7 @@
     z-index: 2;
 }
 
-/* ------------------------------------------------ Cards: Explora, Aprende y Juega ------------------------------------------------*/
+/* ------------------------------------------------ Cards Proyectos ------------------------------------------------*/
 /* Contenedor de las cards */
 .cards-container {
     display: flex;
@@ -52,7 +54,7 @@
     /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* Sombra para darle efecto de elevación */
-    width: 300px;
+    width: 400px;
     /* Ancho fijo para cada card */
     overflow: hidden;
     /* Oculta cualquier contenido que se desborde */
@@ -63,11 +65,12 @@
     /* Centra el texto */
     position: relative;
     /* Asegura el posicionamiento correcto */
+    height: 560px; /* Altura fija para cada tarjeta */
 }
 
 /* Imagen de la card */
 .card-image img {
-    width: 25vw;
+    width: 35vw;
     /* La imagen ocupa todo el ancho de la card */
     height: 250px;
     /* Altura fija */
@@ -269,6 +272,7 @@
 
     .card {
         width: 90%;
+        height: auto;
     }
 
     .card-image img {
