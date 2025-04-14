@@ -42,6 +42,28 @@
     margin-left: auto; /* Empuja el texto a la derecha */
 }
 
+/* -------------------------- SECTION: Seccion de la historia de carlitos  --------------------------*/
+
+.project-description-section{
+    padding: 20px 150px 0 150px;
+    text-align: center;
+}
+
+.project-description-section h3 {
+    font-family: 'Licorice', cursive;
+    font-family: 'Licorice', cursive;
+    text-align: center;
+    color: #FFAF00;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px 0;
+    
+}
+
+.project-description-section p{
+    padding-bottom: 30px;
+}
+
 /* -------------------------- SECTION 2: Sección de contenido --------------------------*/
 .content-section .content {
     font-family: 'Lato', sans-serif;
@@ -58,6 +80,7 @@
     color: #004661;
     font-weight: 900;
 }
+
 .content-section .content .subtitle{
     text-align: left;
 }
