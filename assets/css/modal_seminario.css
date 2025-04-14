@@ -82,7 +82,7 @@
     .modal-seminario-content {
         width: 90%; /* Reducir el ancho del modal */
         max-width: 500px; /* Máximo ancho del modal */
-        margin: 5% auto; /* Alineamos el modal más cerca de la parte superior */
+        margin: 20% auto; /* Alineamos el modal más cerca de la parte superior */
         padding: 15px; /* Reducir el padding */
     }
 
