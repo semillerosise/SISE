@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/nosotros.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/organizacion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/4bc23db062.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assets/img/logoSISE_v4.png" type="image/x-icon">
@@ -110,7 +111,97 @@
         </section>
     </div>
 
+    <section class="organization">
+        <h1>Organización</h1>
+    
+        <div class="section">
+            <h2 class="section-title">Docente</h2>
+            <div class="card center" onclick="openModal('fulvio')">
+                <img src="../assets/img/organizacion/fulvio.jpeg" alt="Docente">
+                <h3>Fulvio Yesid Vivas Cantero</h3>
+                <h4>Docente</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    
+        <div class="section comites">
+            <h2 class="section-title">Junta Directiva</h2>
+            <div class="card-container">
+                <div class="card" onclick="openModal('user1')">
+                    <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                    <h3>Maria Alejandra Casas Castillo</h3>
+                    <h4>Coordinadora</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="card" onclick="openModal('user2')">
+                    <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                    <h3>Johan Stiven Triana Cruz</h3>
+                    <h4>Secretario</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section comites">
+            <h2 class="section-title">Marketing</h2>
+            <div class="card-container">
+                <div class="card" onclick="openModal('user3')">
+                    <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                    <h3>Adrián Yesid Sánchez Hidalgo</h3>
+                    <h4>Coordinador de Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="card" onclick="openModal('user4')">
+                    <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                    <h3>Angelly Julieth Paz Lubo</h3>
+                    <h4>Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="card" onclick="openModal('user5')">
+                    <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                    <h3>Luisa Marcela Castillo Egas</h3>
+                    <h4>Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section comites row-3">
+            <div class="column-1">
+                <h2 class="section-title">Tesorero</h2>
+                <div class="card-container">
+                    <div class="card" onclick="openModal('user6')">
+                        <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                        <h3>Carlos Mario Bucheli</h3>
+                        <h4>Cargo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="colum-2">
+                <h2 class="section-title">Logística</h2>
+                <div class="card" onclick="openModal('user7')">
+                    <img src="../assets/img/organizacion/user-icon.png" alt="Persona">
+                    <h3>Jonathan Becerra</h3>
+                    <h4>Cargo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </section>
+
     <script src="../assets/js/menu-responsive.js"></script>
+    <script src="../assets/js/dataTeam.js"></script>
+    <script src="../assets/js/modalOrganizacion.js"></script>
 </body>
 <footer class="footer">
     <!-- Primera columna -->
