@@ -437,6 +437,25 @@
         margin-left: 0; /* Elimina el margen izquierdo */
     }
 
+    .project-description-section{
+        padding: 30px 30px 0px 30px;
+    }
+
+    .description-container {
+        flex-direction: column;  /* Cambia la disposición a columna */
+        align-items: center;  /* Centra el contenido en pantallas pequeñas */
+        gap: 30px;  /* Aumenta el espacio entre el texto y la imagen */
+    }
+
+    .content-carlitos {
+        text-align: center;  /* Centra el texto en pantallas pequeñas */
+    }
+
+    .carlitos_img img {
+        max-width: 100%;  /* Asegura que la imagen no se desborde */
+        margin-top: 20px;  /* Añade espacio arriba de la imagen */
+    }
+
     /* Sección 2: Contenido */
     .content-section .content {
         padding: 50px 40px;
@@ -446,8 +465,24 @@
         font-size: 1.5rem;
     }
 
-    .content-section .content ul {
+    .content-section .content ul{
         padding: 20px 20px;
+    }
+
+    .content-section .content ul li {
+        margin-bottom: 20px;
+        flex-direction: column;  /* Los elementos se alinean verticalmente */
+        align-items: flex-start;  /* Alinea todo a la izquierda */
+        font-size: 0.9rem;  /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .content-section .content ul li b {
+        margin-right: 0;  /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 5px;  /* Agrega un margen debajo del título */
+    }
+
+    .content-section .content ul li p {
+        flex: 1;  /* La descripción ocupa el 100% del ancho disponible */
     }
 
     /* Sección 3: Beneficios y Funcionalidades */
