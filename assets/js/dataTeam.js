@@ -1,6 +1,6 @@
 const data = {
     "fulvio": {
-        "photo": "../img/organizacion/fulvio.jpeg",
+        "photo": "../../../SISE/assets/img/organizacion/fulvio.jpeg",
         "name": "Fulvio Yesid Vivas Canteros",
         "nivelFormacion": "Estudiante de maestría",
         "fechaGraduacion": "2001-01-01",
