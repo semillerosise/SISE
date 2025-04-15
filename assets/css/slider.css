@@ -64,6 +64,10 @@ html, body {
     
 }
 
+.caption h2 {
+    margin-bottom: 10px;
+}
+
 .caption p {
     font-family: 'Inter', sans-serif;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
