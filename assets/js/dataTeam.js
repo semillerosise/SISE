@@ -1,6 +1,6 @@
 const data = {
     "fulvio": {
-        "photo": "/assets/img/organizacion/fulvio.jpeg",
+        "photo": "../../assets/img/organizacion/fulvio.jpeg",
         "name": "Fulvio Yesid Vivas Canteros",
         "nivelFormacion": "Estudiante de maestría",
         "fechaGraduacion": "2001-01-01",
@@ -56,5 +56,10 @@ const data = {
         "photo": "/assets/img/organizacion/user-icon.png",
         "name": "Jonathan Becerra",
         "cargo": "Logística"
+    },
+    "user8": {
+        "photo": "/assets/img/organizacion/sara.jpg",
+        "name": "Sara Duque",
+        "cargo": "Encargada de la Página Web"
     }
 };
