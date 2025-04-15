@@ -23,43 +23,43 @@ const data = {
         "semilleros": "Sistemas Empotrados"
     },
     "user1": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/alejandra.jpg",
         "name": "Maria Alejandra Casas Castillo",
         "cargo": "Coordinadora"
     },
     "user2": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/triana.jpg",
         "name": "Johan Stiven Triana Cruz",
         "cargo": "Secretario"
     },
     "user3": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/adrian.jpg",
         "name": "Adrián Yesid Sánchez Hidalgo",
         "cargo": "Coordinador de Marketing"
     },
     "user4": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/angelly.jpg",
         "name": "Angelly Julieth Paz Lubo",
         "cargo": "Marketing"
     },
     "user5": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/marcela.jpg",
         "name": "Luisa Marcela Castillo Egas",
         "cargo": "Marketing"
     },
     "user6": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/bucheli.jpg",
         "name": "Carlos Mario Bucheli",
         "cargo": "Tesorero"
     },
     "user7": {
-        "photo": "/assets/img/organizacion/user-icon.png",
+        "photo": "../../../SISE/assets/img/organizacion/jonathan.jpg",
         "name": "Jonathan Becerra",
         "cargo": "Logística"
     },
     "user8": {
-        "photo": "/assets/img/organizacion/sara.jpg",
-        "name": "Sara Duque",
+        "photo": "../../../SISE/assets/img/organizacion/sara.jpg",
+        "name": "Sara Lucia Duque Parra",
         "cargo": "Encargada de la Página Web"
     }
 };
