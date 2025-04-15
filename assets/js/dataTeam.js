@@ -40,12 +40,12 @@ const data = {
     "user4": {
         "photo": "../../../SISE/assets/img/organizacion/angelly.jpg",
         "name": "Angelly Julieth Paz Lubo",
-        "cargo": "Marketing"
+        "cargo": "Asistente de Marketing"
     },
     "user5": {
         "photo": "../../../SISE/assets/img/organizacion/marcela.jpg",
         "name": "Luisa Marcela Castillo Egas",
-        "cargo": "Marketing"
+        "cargo": "Asistente de Marketing"
     },
     "user6": {
         "photo": "../../../SISE/assets/img/organizacion/bucheli.jpg",
