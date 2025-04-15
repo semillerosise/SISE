@@ -23,7 +23,7 @@ const data = {
         "semilleros": "Sistemas Empotrados"
     },
     "user1": {
-        "photo": "../../../SISE/assets/img/organizacion/alejandra.jpg",
+        "photo": "../../assets/img/organizacion/alejandra.jpg",
         "name": "Maria Alejandra Casas Castillo",
         "cargo": "Coordinadora"
     },
