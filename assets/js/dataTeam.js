@@ -33,7 +33,7 @@ const data = {
         "cargo": "Secretario"
     },
     "user3": {
-        "photo": "../../../SISE/assets/img/organizacion/adrian.jpg",
+        "photo": "../../../SISE/assets/img/organizacion/ADRIAN.jpeg",
         "name": "Adrián Yesid Sánchez Hidalgo",
         "cargo": "Coordinador de Marketing"
     },
