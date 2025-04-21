@@ -24,7 +24,7 @@ const data = {
     },
     "user1": {
         "photo": "../../../SISE/assets/img/organizacion/alejandra.jpg",
-        "name": "Maria Alejandra Casas Castillo",
+        "name": "Maria Alejandra Casas Trujillo",
         "cargo": "Coordinadora"
     },
     "user2": {
