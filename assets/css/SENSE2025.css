@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Estilos Generales */
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+/* ----------------------------- Sección de Hero Section -----------------------------*/
+.hero-section {
+    position: relative;  /* Necesario para posicionar el texto encima de la capa */
+    background: 
+        linear-gradient(
+            
+            rgba(0, 67, 94, 0.721),
+            rgba(0, 67, 94, 0.595),
+            rgba(0, 67, 94, 0.467),
+            rgba(0, 67, 94, 0.292),
+            rgba(255, 255, 255, 0.301)
+        ), 
+        url(https://i.ibb.co/23XRbRPd/IMG-9871.jpg); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;  /* Hace que la sección ocupe el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1;  /* Asegura que el contenedor esté en una capa por debajo del texto */
+}
+
+/* Estilo del título */
+.hero-section h1 {
+    font-size: 50px;  /* Tamaño de fuente grande para el título */
+    margin-bottom: 20px;
+    color: #fff;  /* Asegura que el texto sea blanco */
+    z-index: 2;  /* Asegura que el título esté por encima de la capa semitransparente */
+}
+
+/* Estilo del párrafo */
+.hero-section p {
+    font-size: 28px;
+    color: #fff;  /* Asegura que el texto sea blanco */
+    z-index: 2;  /* Asegura que el párrafo esté por encima de la capa semitransparente */
+}
+
+
+
+/* ----------------------------- Sección de Seminario -----------------------------*/
+.seminario-section{
+    margin-bottom: 30px;
+}
+
+.seminario-section h1{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.card-wrapper-courses {
+    max-width: 1100px;
+    margin: 0 60px 35px ;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list-courses .card-item {
+    list-style: none;
+}
+
+.card-list-courses .card-item .card-link-course{
+    user-select: none;
+    height: 450px;
+    width: 300px;
+    display: block;
+    border: 2px solid transparent;
+    background-color: #fff;
+    /* background-color: grey; */
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.card-list-courses .card-item .card-link-course:active{
+    cursor: grabbing;
+}
+
+.card-list-courses .card-item .card-link-course:hover{
+    border-color: #00445e;
+}
+
+.card-list-courses .card-link-course .card-image-course{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list-courses .card-link-course .badge{  
+    background-color: #84baf4;
+    margin: 16px 0 18px;
+    padding: 8px 16px ;
+    font-size: 0.95rem;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 50px;
+    color: #013c7a;
+}
+
+
+
+.card-list-courses .card-link-course .card-title-course{
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.card-list-courses .card-link-course .card-button-course{
+    height: 35px;
+    width: 35px;
+    color: #0056b3;
+    border-radius: 50%;
+    margin: 20px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    transform: rotate(-45deg);
+    transition: 0.3s ease-in-out;
+}
+
+.card-list-courses .card-link-course:hover .card-button-course{
+    color: #fff;
+    background: #007bff;
+}
+
+.card-wrapper-courses .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #59a5f5;
+}
+
+.card-wrapper-courses .swiper-pagination-bullet-active{
+    height: 13px;
+    width: 13px;
+    opacity: 1;
+    background: #00445e;
+}
+
+.card-wrapper-courses .swiper-slide-button{
+    color: #59a5f5; 
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-list-courses .card-item .card-link-course{
+        width: 70vw;
+    }
+
+    .card-wrapper-courses{
+        margin: 0 10px 25px;
+    }
+    
+    .card-wrapper-courses .swiper-slide-button{
+        display: none;
+    }
+}
+
+
+
+
+/* ----------------------------- Sección de REGISTRO -----------------------------*/
+
+/* Botón de Registro */
+.register-btn {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilo del título */
+    .hero-section h1 {
+        font-size: 30px;  /* Tamaño de fuente grande para el título */
+    }
+
+    /* Estilo del párrafo */
+    .hero-section p {
+        font-size: 20px;
+    }
+    
+}
+
+
