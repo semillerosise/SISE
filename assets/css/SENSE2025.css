@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Licorice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 /* Estilos Generales */
@@ -51,14 +51,66 @@ body {
     z-index: 2;  /* Asegura que el párrafo esté por encima de la capa semitransparente */
 }
 
+@media screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 30px;
+    }
+    
+    .hero-section p {
+        font-size: 20px;
+        color: #fff;  /* Asegura que el texto sea blanco */
+        z-index: 2;  /* Asegura que el párrafo esté por encima de la capa semitransparente */
+    }
+}
 
 
-/* ----------------------------- Sección de Seminario -----------------------------*/
-.seminario-section{
+
+/* -------------------------------------------------- SECCIÓN DEL SEMINARIO  -------------------------------------------------------*/
+.content-seminar{
+    padding: 40px 0px;
+}
+
+.description-seminar{
+    padding: 30px 200px;
+    text-align: center;
+}
+
+.description-seminar h1{
     margin-bottom: 30px;
 }
 
-.seminario-section h1{
+.description-seminar p{
+    font-size: 1.05rem;
+}
+
+.description-seminar .call-to-action{
+    font-family: 'Licorice';
+    font-size: 3.2rem;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .description-seminar{
+        padding: 30px 20px;
+    }
+
+    .description-seminar p{
+        font-size: 0.9rem;
+    }
+
+    .description-seminar .call-to-action{
+        font-size:  1.8rem;
+    }
+    
+}
+
+
+/* ---------------------------------- Estilos para los cursos ---------------------------------- */
+.seminario-courses-section{
+    margin-bottom: 30px;
+}
+
+.seminario-courses-section h1{
     text-align: center;
     margin: 30px 0;
 }
@@ -161,6 +213,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
     .card-list-courses .card-item .card-link-course{
         width: 70vw;
     }
@@ -175,40 +228,71 @@ body {
 }
 
 
-
-
-/* ----------------------------- Sección de REGISTRO -----------------------------*/
-
-/* Botón de Registro */
-.register-btn {
-    display: block;
+/* ---------------------------------- Estilos para los patrocinadores ---------------------------------- */
+.sponsors{
+    padding: 20px 0;
     text-align: center;
-    margin: 30px auto;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.register-btn:hover {
-    background-color: #0056b3;
+.sponsors h1{
+    margin: 20px 0;
 }
 
-@media screen and (max-width: 768px) {
-    /* Estilo del título */
-    .hero-section h1 {
-        font-size: 30px;  /* Tamaño de fuente grande para el título */
-    }
+.sponsors p{
+    margin-bottom: 20px;
+    font-size: 1.10rem;
+    padding: 0 30px;
+}
 
-    /* Estilo del párrafo */
-    .hero-section p {
-        font-size: 20px;
-    }
+.card-wrapper-sponsors{
+    max-width: 1100px;
+    margin: 0 60px 35px ;
+    padding: 20px 10px;
+    overflow: hidden;
     
 }
 
+.card-list-sponsors .card-item {
+    list-style: none;
+    
+}
 
+.card-list-sponsors .card-item .card-link-sponsor {
+    width: fit-content;
+    user-select: none;
+    display: block;
+    border: none; /* No border needed for images */
+    background-color: transparent; /* Background color removed */
+    padding: 0; /* Removed padding */
+    border-radius: 0; /* Removed border radius */
+    text-decoration: none;
+    box-shadow: none; /* Removed box shadow */
+    transition: 0.3s ease-in-out;
+}
+
+.card-list-sponsors .card-item .card-link-sponsor:active {
+    cursor: grabbing;
+}
+
+.card-list-sponsors .card-item .card-link-sponsor:hover {
+    border-color: transparent; /* No border color needed */
+}
+
+.card-list-sponsors .card-item .card-link-sponsor .card-image-sponsor {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: 200px; /* Establece la altura fija que desees */
+    object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del contenedor sin deformarse */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 10px; /* Opcional: si quieres bordes redondeados */
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-wrapper-sponsors{
+        margin: 0 10px 25px;
+    }
+    
+    .card-wrapper-sponsors .swiper-slide-button{
+        display: none;
+    }
+}
