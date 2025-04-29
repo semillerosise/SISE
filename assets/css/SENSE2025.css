@@ -107,6 +107,8 @@ body {
 
 /* ---------------------------------- Estilos para los cursos ---------------------------------- */
 .seminario-courses-section{
+    /* background-color: #4776a8;
+    color: black; */
     margin-bottom: 30px;
 }
 
@@ -146,7 +148,7 @@ body {
 }
 
 .card-list-courses .card-item .card-link-course:hover{
-    border-color: #00445e;
+    border-color: #84baf4;
 }
 
 .card-list-courses .card-link-course .card-image-course{
