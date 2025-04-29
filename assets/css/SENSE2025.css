@@ -313,7 +313,7 @@ body {
 @media screen and (max-width: 768px) {
 
     .card-list-speakers .card-item .card-link-speaker{
-        height: 160vh;
+        height: fit-content;
         width: 72vw;
     }
 
@@ -446,6 +446,7 @@ body {
 
     .card-list-courses .card-item .card-link-course{
         width: 70vw;
+        height: fit-content;
     }
 
     .card-wrapper-courses{
