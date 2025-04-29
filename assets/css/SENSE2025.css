@@ -313,7 +313,8 @@ body {
 @media screen and (max-width: 768px) {
 
     .card-list-speakers .card-item .card-link-speaker{
-        width: 70vw;
+        height: 160vh;
+        width: 72vw;
     }
 
     .card-wrapper-speakers{
@@ -323,6 +324,13 @@ body {
     .card-wrapper-speakers .swiper-slide-button{
         display: none;
     }
+
+    .card-list-speakers .card-link-speaker .badge {
+        border-radius: 30px;
+        margin: 16px 30px;
+        text-align: center;
+    }
+    
 }
 
 /* ---------------------------------- Estilos para los cursos ---------------------------------- */
