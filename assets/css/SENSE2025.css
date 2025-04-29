@@ -310,11 +310,24 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 420px) {
+    .card-list-speakers .card-link-speaker .card-image-speaker {
+        width: 100%;
+        height: 280px;
+    }
 
     .card-list-speakers .card-item .card-link-speaker{
         height: fit-content;
-        width: 72vw;
+        width: 77vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-list-speakers .card-item .card-link-speaker{
+        height: fit-content;
+        
     }
 
     .card-wrapper-speakers{
