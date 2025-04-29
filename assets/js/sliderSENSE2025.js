@@ -14,12 +14,7 @@ new Swiper('.card-wrapper-courses', {
       clickable: true,
       dynamicBullets: true,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+
 
     // Responsive breakpoints
     breakpoints: {
@@ -82,5 +77,39 @@ new Swiper('.card-wrapper-sponsors', {
     1024: {
       slidesPerView: 5,
     },
+  },
+});
+
+new Swiper('.card-wrapper-speakers', {
+  direction: 'horizontal', // Cambiado de 'horizontal' a 'vertical'
+  loop: true,
+  spaceBetween: 30,
+  autoplay: true,
+  speed: 500,
+
+  // Pagination Bullets
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    slidePerView: 1,
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
   },
 });
