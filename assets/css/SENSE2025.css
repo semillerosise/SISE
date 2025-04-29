@@ -160,7 +160,42 @@ body {
 
 .basic-data .content-basic-data .price p{
     font-size: 1.3rem;
+}
 
+.basic-data .content-basic-data .price .price-part-1{
+    font-size: 1.8em; 
+    color: #0e5774; 
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .basic-data{
+        flex-direction: column;
+        padding: 50px 40px;
+        gap: 10px;
+    }
+
+    .basic-data .content-basic-data{
+        width: 100%;
+    }
+
+    .basic-data .content-basic-data ul{
+        font-size: 1rem;
+    }
+
+    .basic-data .content-basic-data .price {
+        width: 90vw;
+    }
+
+    
+}
+
+@media screen and (max-width: 420px) {
+    .basic-data .content-basic-data .price .price-part-1{
+        width: 30vw;
+        font-size: 2rem;
+    }
 }
 
 
