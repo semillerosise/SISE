@@ -486,7 +486,7 @@ body {
 
 .card-list-courses .card-item .card-link-course {
     user-select: none;
-    height: 465px;
+    height: 500px;
     width: 300px;
     display: block;
     border: 2px solid transparent;
